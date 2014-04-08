@@ -4,10 +4,14 @@ Wikitude_bug_demo
 Demonstration of a bug I encountered in Wikitude. After interacting with a button in the AR view,
 the Android keyboard will not launch.
 
+# Building
+cordova platform add android
+cordova build android
+cordova run android
+
 # To Encounter Bug
 1. Type in the text box
 2. Click button to launch AR view
-3. Click the button at the top of the screen a few times
 4. Press back, return to main view
 5. Type in the text box
 
