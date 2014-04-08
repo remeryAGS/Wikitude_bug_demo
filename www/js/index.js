@@ -61,5 +61,17 @@ var app = {
         }, function() {
             console.log("darn!");
         });
+    },
+
+    getFocus: function() {
+        SoftKeyboard.getFocus(function(result) {
+            if(result) {
+                console.log("it worked!");
+            } else {
+                console.log("no focus change");
+            }
+        }, function() {
+            console.log("darn!");
+        });
     }
 };

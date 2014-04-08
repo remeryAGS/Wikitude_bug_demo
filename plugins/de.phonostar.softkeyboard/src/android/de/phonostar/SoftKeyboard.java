@@ -30,6 +30,10 @@ public class SoftKeyboard extends CordovaPlugin {
       return (100 < heightDiff); // if more than 100 pixels, its probably a keyboard...
     }
 
+    public boolean getApplicationFocus() {
+      return webView.requestFocus();
+    }
+
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) {
     if (action.equals("show")) {
@@ -44,6 +48,10 @@ public class SoftKeyboard extends CordovaPlugin {
     }
     else if (action.equals("isShowing")) {
       callbackContext.success(Boolean.toString(this.isKeyBoardShowing()));
+      return true;
+    }
+    else if (action.equals("getFocus")) {
+      callbackContext.success(Boolean.toString(this.getApplicationFocus()));
       return true;
     }
     else {
