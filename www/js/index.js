@@ -44,7 +44,7 @@ var app = {
 
     onDeviceSupported: function(){
         console.log('device supported');
-        app.wikitudePlugin.loadARchitectWorld('world/ar.html');
+        app.wikitudePlugin.loadARchitectWorld('assets/www/world/ar.html');
     },
 
     onDeviceNotSupported: function(){
