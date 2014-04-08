@@ -54,4 +54,12 @@ var app = {
     launch: function(){
         app.wikitudePlugin.isDeviceSupported(app.onDeviceSupported, app.onDeviceNotSupported);
     },
+
+    keyboard: function() {
+        SoftKeyboard.show(function() {
+            console.log("it worked!");
+        }, function() {
+            console.log("darn!");
+        });
+    }
 };
