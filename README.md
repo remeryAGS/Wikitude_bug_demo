@@ -12,6 +12,7 @@ cordova run android
 # To Encounter Bug
 1. Type in the text box
 2. Click button to launch AR view
+3. Click on the screen
 4. Press back, return to main view
 5. Type in the text box
 
