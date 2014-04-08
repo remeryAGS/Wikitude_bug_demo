@@ -5,9 +5,9 @@ Demonstration of a bug I encountered in Wikitude. After interacting with a butto
 the Android keyboard will not launch.
 
 # Building
-cordova platform add android
-cordova build android
-cordova run android
+1. cordova platform add android
+2. cordova build android
+3. cordova run android
 
 # To Encounter Bug
 1. Type in the text box
