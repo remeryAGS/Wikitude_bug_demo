@@ -20,4 +20,4 @@ build/
 local.properties
 
 # Cordova platform directory
-platforms/
+platforms/*
